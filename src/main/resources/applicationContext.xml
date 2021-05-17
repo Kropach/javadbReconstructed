@@ -1,0 +1,36 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<beans  xmlns="http://www.springframework.org/schema/beans"-->
+<!--        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+<!--        xmlns:context="http://www.springframework.org/schema/context"-->
+<!--        xsi:schemaLocation="http://www.springframework.org/schema/beans-->
+<!--        http://www.springframework.org/schema/beans/spring-beans.xsd-->
+<!--        http://www.springframework.org/schema/context-->
+<!--        http://www.springframework.org/schema/context/spring-context.xsd">-->
+
+<!--    <context:property-placeholder location="classpath:applicationProperties.properties"/>-->
+<!--    <bean id="hcrepBean"-->
+<!--          class="KR.DAO.HCRep">-->
+<!--    </bean>-->
+
+<!--    <bean id="dbrepBean"-->
+<!--          class="KR.DAO.DB">-->
+<!--        <constructor-arg index="0" value="${dbrepBean.url}"/>-->
+<!--        <constructor-arg index="1" value="${dbrepBean.user}"/>-->
+<!--        <constructor-arg index="2" value="${dbrepBean.pass}"/>-->
+<!--&lt;!&ndash;        <property name="url" value="${dbrepBean.url}"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="user" value="${dbrepBean.user}"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="pass" value="${dbrepBean.pass}"/>&ndash;&gt;-->
+<!--    </bean>-->
+<!--    <bean id="hibernateRepBean"-->
+<!--            class="KR.DAO.Hibernate"/>-->
+<!--    <bean id="msBean"-->
+<!--          class="KR.Services.MainService">-->
+<!--&lt;!&ndash;        <constructor-arg ref="dbrepBean"/>&ndash;&gt;-->
+<!--        <constructor-arg ref="hibernateRepBean"/>-->
+<!--    </bean>-->
+<!--    <bean id="consoleBean"-->
+<!--          class="KR.UI.ConsoleUI">-->
+<!--        <constructor-arg ref="msBean"/>-->
+<!--    </bean>-->
+
+<!--</beans>-->
