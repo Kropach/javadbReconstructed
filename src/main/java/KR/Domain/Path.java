@@ -1,13 +1,16 @@
 package KR.Domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.LinkedList;
 
 
 @Entity
 @Table(name = "path")
 //@Embeddable
-public class Path {
+public class Path implements Serializable {
     @Id
     @Column(name = "Id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,7 +20,8 @@ public class Path {
     @Column(name = "PathName")
     private String pathName;
     @Transient
-    private LinkedList<Station> stations = new LinkedList<>();
+//    @JsonIgnore
+    private transient LinkedList<Station> stations = new LinkedList<>();
 
     public Path() {
     }

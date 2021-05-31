@@ -1,11 +1,12 @@
 package KR.Domain;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "station")
 //@Embeddable
-public class Station {
+public class Station implements Serializable {
     @Id
     @Column(name = "Id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -12,7 +12,8 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.sql.SQLException;
 import java.util.List;
-@Component("mainService")
+//@Component("mainService")
+@Service
 public class MainService {
     private Repository<Path, Station> repository;
     @Autowired

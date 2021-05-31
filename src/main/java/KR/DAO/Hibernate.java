@@ -55,6 +55,7 @@ public class Hibernate implements KR.DAO.Repository{
                 pathes.get(i).getStations().add(station);
             }
         }
+        //через fetch как-то или сложный запрос
 //        List<PathStation> temp = session.createQuery("from PathStation").list();
 //        List<Path> pathes = new ArrayList<>();
 //        for (PathStation ps : temp)

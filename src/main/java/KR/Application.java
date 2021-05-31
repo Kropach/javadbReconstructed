@@ -1,6 +1,7 @@
 package KR;
 
-import KR.Config.SpringConfig;
+import KR.Config.HibernateConfig;
+//import KR.Config.SpringConfig;
 import KR.UI.ConsoleUI;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -15,7 +16,7 @@ public class Application {
 //                "applicationContext.xml"
 //        );
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(
-                SpringConfig.class
+                HibernateConfig.class
         );
 //        MainService mainService = context.getBean("msBean", MainService.class);
 //        context.refresh();

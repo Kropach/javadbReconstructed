@@ -1,10 +1,11 @@
 package KR.Domain;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name = "pathstation")
-public class PathStation {
+public class PathStation implements Serializable {
     @Id
     @Column(name = "Id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
