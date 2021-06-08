@@ -16,13 +16,13 @@ public class StationController {
     }
 
 
-    @PutMapping(value = "/pathId, stationId, timeA, timeD")
+    @PutMapping(value = "/{pathStation}")
     public void changeStation(@RequestParam("pathId") int pathId, @RequestParam("stationId") int stationId,
                               @RequestParam("timeA") String timeA, @RequestParam("timeD") String timeD) throws SQLException {
         mainService.changeStation(pathId, stationId, timeA, timeD);
     }
 
-    @PostMapping(value = "name")
+    @PostMapping(value = "/{name}")
     public void createStation(@RequestParam("name") String name){
         mainService.createStation(name);
     }
